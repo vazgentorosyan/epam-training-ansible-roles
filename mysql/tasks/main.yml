@@ -3,7 +3,9 @@
 
  - name: install mysql server
    apt:
-     name: mysql-server
+     name: 
+       - mysql-server
+       - python3-pymysql
      state: present
    become: yes
 
